@@ -7,9 +7,9 @@ extends CanvasLayer
 
 func _on_deploy_troops_pressed():
 	# # Replace with function body.
-	game_controller.InitialRandomDeployment()
+	game_controller.OnDeploymentButtonClicked()
 	# Hide the button after deploying troops
-	var deploy_button = get_node("Deploy Troops")
+	#var deploy_button = get_node("Deploy Troops")
 	
 
 
