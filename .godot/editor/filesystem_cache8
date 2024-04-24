@@ -1,88 +1,17 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1713957929
-AttackContinue.gd::GDScript::-1::1713492451::0::1::::<>Button<>::
-buttonLayer.gd::GDScript::-1::1713951705::0::1::::<>CanvasLayer<>::
-canvas_layer.tscn::PackedScene::6412697646023598251::1713957878::0::1::::<><>::res://buttonLayer.gd
+::res://::1713982831
+AttackContinue.gd::GDScript::-1::1713977561::0::1::::<>RefCounted<>::
+buttonLayer.gd::GDScript::-1::1713981705::0::1::::<>CanvasLayer<>::
+canvas_layer.tscn::PackedScene::6412697646023598251::1713981818::0::1::::<><>::res://buttonLayer.gd
 continents.tscn::PackedScene::7220750039556001021::1710175175::0::1::::<><>::uid://dhauti2c6gush::::res://Continent img/africa1.png<>uid://up35t2hnnjbf::::res://Continent img/asia1.png<>uid://ciimsoa4hm0la::::res://Continent img/australia1.png<>uid://d3mra36jyy21f::::res://Continent img/europe1.png<>uid://bj2xbbx0g03nk::::res://Continent img/northamerica1.png<>uid://dyuw6hcav671g::::res://Continent img/southamerica1.png<>res://connection.gd
 End Attack Phase.gd::GDScript::-1::1713443684::0::1::::<>Button<>::
 export_presets.cfg::TextFile::-1::1713956663::0::1::::<><>::
 icon.svg::CompressedTexture2D::8390575451370007765::1709666044::1710246992::1::::<><>::
-main.tscn::PackedScene::6673018328068701560::1713957877::0::1::::<><>::res://quit.gd<>res://play.gd<>uid://cdxi3sa6wr40m::::res://risk game background.jpg
-play.gd::GDScript::-1::1713357671::0::1::::<>Button<>::
+main.tscn::PackedScene::6673018328068701560::1713981818::0::1::::<><>::res://quit.gd<>res://play.gd<>uid://cdxi3sa6wr40m::::res://risk game background.jpg
+play.gd::GDScript::-1::1713981357::0::1::::<>Button<>::
 players.tscn::PackedScene::1433754064076634422::1710175175::0::1::::<><>::
 quit.gd::GDScript::-1::1709667537::0::1::::<>Button<>::
 README.md::TextFile::-1::1713957247::0::1::::<><>::
 risk game background.jpg::CompressedTexture2D::5031425271674045594::1709770907::1710246993::1::::<><>::
-territory_manager.gd::GDScript::-1::1713864871::0::1::::<>Node2D<>::
-territory_manager.tscn::PackedScene::576715850386462354::1713957878::0::1::::<><>::res://GD-Risk-Game-SW-CW/TerritoryManager.gd<>uid://dmkbphtje1ucv::::res://GD-Risk-Game-SW-CW/Continent img/Madagascar.png<>uid://li3wqfiuh61x::::res://GD-Risk-Game-SW-CW/Continent img/Ural.png<>uid://b5bdytp5aa2lb::::res://GD-Risk-Game-SW-CW/Continent img/Afghanistan.png<>uid://rnwjrkika5xi::::res://GD-Risk-Game-SW-CW/Continent img/Siberia.png<>uid://cnq7wguk6inee::::res://GD-Risk-Game-SW-CW/Continent img/Yakutsk.png<>uid://3o4paeyl8ov0::::res://GD-Risk-Game-SW-CW/Continent img/Kamchatka.png<>uid://buts8hl8m5v5s::::res://GD-Risk-Game-SW-CW/Continent img/Irkutsk.png<>uid://cp8t11m73jfp::::res://GD-Risk-Game-SW-CW/Continent img/China.png<>uid://dvea31ff3ifat::::res://GD-Risk-Game-SW-CW/Continent img/Mongolia.png<>uid://c0om4ecyqvpp0::::res://GD-Risk-Game-SW-CW/Continent img/Japan.png<>uid://c3tmxwrmdjmq7::::res://GD-Risk-Game-SW-CW/Continent img/Siam.png<>uid://7fur1kh83dqb::::res://GD-Risk-Game-SW-CW/Continent img/India.png<>uid://dchygjergiut6::::res://GD-Risk-Game-SW-CW/Continent img/Indonesia.png<>uid://dg1fsxguw6jew::::res://GD-Risk-Game-SW-CW/Continent img/NewGuinea.png<>uid://dm8i6acjj5hpy::::res://GD-Risk-Game-SW-CW/Continent img/EasternAustralia.png<>uid://ce4xsn6nqkghu::::res://GD-Risk-Game-SW-CW/Continent img/WesternAustralia.png<>uid://csc2uwawarvd8::::res://GD-Risk-Game-SW-CW/Continent img/Alaska.png<>uid://b8bj2iakuxvg3::::res://GD-Risk-Game-SW-CW/Continent img/NorthwestTerritory.png<>uid://bi6qx4e4sh0f7::::res://GD-Risk-Game-SW-CW/Continent img/Alberta.png<>uid://cu4ou667m7tad::::res://GD-Risk-Game-SW-CW/Continent img/Ontario.png<>uid://cbes2d52rgxst::::res://GD-Risk-Game-SW-CW/Continent img/WesternUnitedStates.png<>uid://blt4leychgnei::::res://GD-Risk-Game-SW-CW/Continent img/EasternUnitedStates.png<>uid://e4bsj5h8uin8::::res://GD-Risk-Game-SW-CW/Continent img/Quebec.png<>uid://0fexpqpurdkd::::res://GD-Risk-Game-SW-CW/Continent img/CentralAmerica.png<>uid://b77ckr5gkys61::::res://GD-Risk-Game-SW-CW/Continent img/Venezuela.png<>uid://cbnipse6ywydb::::res://GD-Risk-Game-SW-CW/Continent img/Peru.png<>uid://c28k8hxnm7isf::::res://GD-Risk-Game-SW-CW/Continent img/Argentina.png<>uid://dgqb8724kvtkm::::res://GD-Risk-Game-SW-CW/Continent img/Brazil.png<>uid://58ar71h40oui::::res://GD-Risk-Game-SW-CW/Continent img/Greenland.png<>uid://b76kel8ja2ito::::res://GD-Risk-Game-SW-CW/Continent img/Iceland.png<>uid://cr6b55qg2si1a::::res://GD-Risk-Game-SW-CW/Continent img/GreatBritain.png<>uid://16gtsafxduee::::res://GD-Risk-Game-SW-CW/Continent img/Scandinavia.png<>uid://c58rtqn7wp2h2::::res://GD-Risk-Game-SW-CW/Continent img/NorthernEurope.png<>uid://bdsfn3hir3xs7::::res://GD-Risk-Game-SW-CW/Continent img/WesternEurope.png<>uid://ivfyrejosnsc::::res://GD-Risk-Game-SW-CW/Continent img/SouthernEurope.png<>uid://qkwx552q3pcq::::res://GD-Risk-Game-SW-CW/Continent img/Ukraine.png<>uid://bfu4gawj77doq::::res://GD-Risk-Game-SW-CW/Continent img/MiddleEast.png<>uid://cuylijdavqowv::::res://GD-Risk-Game-SW-CW/Continent img/Egypt.png<>uid://devx88vh3r0e5::::res://GD-Risk-Game-SW-CW/Continent img/EastAfrica.png<>uid://da3nsfp531xmn::::res://GD-Risk-Game-SW-CW/Continent img/NorthAfrica.png<>uid://cl7bcna6cst82::::res://GD-Risk-Game-SW-CW/Continent img/Congo.png<>uid://2ypo4gywe0bn::::res://GD-Risk-Game-SW-CW/Continent img/SouthAfrica.png
-::res://GD-Risk-Game-SW-CW/::1713957878
-Button.gd::GDScript::-1::1713357670::0::1::::<>Button<>::
-Camera2D.gd::GDScript::-1::1713349613::0::1::::<>RefCounted<>::
-click.gd::GDScript::-1::1713357670::0::1::::<>Button<>::
-continents.tscn::PackedScene::5630650765969918418::1713957877::0::1::::<><>::res://GD-Risk-Game-SW-CW/GameController.cs<>uid://cxmmgtqmxu62j::::res://canvas_layer.tscn<>uid://ihmoqhrmgj6a::::res://territory_manager.tscn
-GameController.cs::CSharpScript::-1::1713953404::0::1::::<>Node<>::
-main.tscn::PackedScene::1398204199289494046::1710247135::0::1::::<><>::res://quit.gd<>res://play.gd<>res://risk game background.jpg
-play.gd::GDScript::-1::1710175979::0::1::::<>Button<>::
-Player.cs::CSharpScript::-1::1713859333::0::1::::<><>::
-players.tscn::PackedScene::3646617757321135194::1711564069::0::1::::<><>::uid://bvj8wqf2ft7nt::::res://GD-Risk-Game-SW-CW/Player Setup/menu_background.png<>res://GD-Risk-Game-SW-CW/players.cs<>uid://c5vo5xsiwj3ex::::res://GD-Risk-Game-SW-CW/Player Setup/startbutton.png<>res://GD-Risk-Game-SW-CW/Player Setup/Button.gd<>res://GD-Risk-Game-SW-CW/DropDownMenu.cs<>res://GD-Risk-Game-SW-CW/PlayerTypeDropdown1.cs
-PlayerTypeDropdown.gd::GDScript::-1::1710950544::0::1::::<>OptionButton<>::
-quit.gd::GDScript::-1::1710175979::0::1::::<>Button<>::
-README.md::TextFile::-1::1709835830::0::1::::<><>::
-Territory.cs::CSharpScript::-1::1713867599::0::1::::<>Node<>::
-TerritoryManager.gd::GDScript::-1::1713957877::0::1::::<>Node2D<>::
-::res://GD-Risk-Game-SW-CW/addons/::1709830545
-::res://GD-Risk-Game-SW-CW/addons/godot-git-plugin/::1709830545
-git_plugin.gdextension::GDExtension::-1::1709830545::0::1::::<><>::
-plugin.cfg::TextFile::-1::1709830545::0::1::::<><>::
-THIRDPARTY.md::TextFile::-1::1709830545::0::1::::<><>::
-::res://GD-Risk-Game-SW-CW/addons/godot-git-plugin/linux/::1709830545
-::res://GD-Risk-Game-SW-CW/addons/godot-git-plugin/macos/::1709830545
-::res://GD-Risk-Game-SW-CW/addons/godot-git-plugin/win64/::1713957920
-::res://GD-Risk-Game-SW-CW/Continent img/::1710943374
-Afghanistan.png::CompressedTexture2D::4494376403098962531::1710351388::1710349415::1::::<><>::
-Alaska.png::CompressedTexture2D::6042045539575672099::1710351388::1710349511::1::::<><>::
-Alberta.png::CompressedTexture2D::3012941219015646630::1710349673::1710349674::1::::<><>::
-Argentina.png::CompressedTexture2D::6736731116425492009::1710349673::1710349674::1::::<><>::
-Brazil.png::CompressedTexture2D::7613546528952844116::1710349673::1710349674::1::::<><>::
-CentralAmerica.png::CompressedTexture2D::1765327734228039819::1710349673::1710349674::1::::<><>::
-China.png::CompressedTexture2D::173382350793565245::1710349673::1710349674::1::::<><>::
-Congo.png::CompressedTexture2D::5611043708330500697::1710349673::1710349674::1::::<><>::
-EastAfrica.png::CompressedTexture2D::7484826546566788338::1710349673::1710349674::1::::<><>::
-EasternAustralia.png::CompressedTexture2D::8070193739684590290::1710349673::1710349674::1::::<><>::
-EasternUnitedStates.png::CompressedTexture2D::3199501824830957092::1710349673::1710349674::1::::<><>::
-Egypt.png::CompressedTexture2D::6226845956889228105::1710349673::1710349674::1::::<><>::
-GreatBritain.png::CompressedTexture2D::6030163311145305236::1710349673::1710349674::1::::<><>::
-Greenland.png::CompressedTexture2D::2173821854791247968::1710349673::1710349674::1::::<><>::
-Iceland.png::CompressedTexture2D::4697074332734661868::1710349673::1710349674::1::::<><>::
-India.png::CompressedTexture2D::2257610964957447165::1710349673::1710349674::1::::<><>::
-Indonesia.png::CompressedTexture2D::7315558784893738293::1710349673::1710349674::1::::<><>::
-Irkutsk.png::CompressedTexture2D::3830572957022451442::1710349673::1710349674::1::::<><>::
-Japan.png::CompressedTexture2D::6557244353125972347::1710349673::1710349674::1::::<><>::
-Kamchatka.png::CompressedTexture2D::1995976497406226003::1710349673::1710349674::1::::<><>::
-Madagascar.png::CompressedTexture2D::8022259853607673625::1710349673::1710349674::1::::<><>::
-MiddleEast.png::CompressedTexture2D::2780423998956755736::1710349673::1710349674::1::::<><>::
-Mongolia.png::CompressedTexture2D::8641536654319600007::1710349673::1710349674::1::::<><>::
-NewGuinea.png::CompressedTexture2D::7634405882012388762::1710349673::1710349674::1::::<><>::
-NorthAfrica.png::CompressedTexture2D::7217886380579575057::1710349673::1710349674::1::::<><>::
-NorthernEurope.png::CompressedTexture2D::6947698123312382861::1710349673::1710349674::1::::<><>::
-NorthwestTerritory.png::CompressedTexture2D::4705311991541370484::1710349673::1710349674::1::::<><>::
-Ontario.png::CompressedTexture2D::6237372626375452367::1710349673::1710349674::1::::<><>::
-Peru.png::CompressedTexture2D::4870380597718699735::1710349673::1710349674::1::::<><>::
-Quebec.png::CompressedTexture2D::340715710120144267::1710349673::1710349674::1::::<><>::
-Scandinavia.png::CompressedTexture2D::1889304822683843460::1710349673::1710349674::1::::<><>::
-Siam.png::CompressedTexture2D::6778123026076235304::1710349673::1710349674::1::::<><>::
-Siberia.png::CompressedTexture2D::1221400007357212718::1710349673::1710349674::1::::<><>::
-SouthAfrica.png::CompressedTexture2D::1945581133896490899::1710349673::1710349674::1::::<><>::
-SouthernEurope.png::CompressedTexture2D::605210025461584938::1710349673::1710349674::1::::<><>::
-Ukraine.png::CompressedTexture2D::1145043746143683280::1710349673::1710349674::1::::<><>::
-Ural.png::CompressedTexture2D::790332513802349503::1710349673::1710349674::1::::<><>::
-Venezuela.png::CompressedTexture2D::4698663999692658080::1710349673::1710349674::1::::<><>::
-WesternAustralia.png::CompressedTexture2D::5114893063234912842::1710349673::1710349674::1::::<><>::
-WesternEurope.png::CompressedTexture2D::2634474296319633936::1710349673::1710349674::1::::<><>::
-WesternUnitedStates.png::CompressedTexture2D::4852429049509622259::1710349673::1710349674::1::::<><>::
-Yakutsk.png::CompressedTexture2D::5720308956512313520::1710349673::1710943374::1::::<><>::
-::res://GD-Risk-Game-SW-CW/Player Setup/::1713357670
-Button.gd::GDScript::-1::1713357670::0::1::::<>Button<>::
-menu_background.png::CompressedTexture2D::3881009597437366869::1710246894::1710247146::1::::<><>::
-PlayerTypeDropdown.gd::GDScript::-1::1710866790::0::1::::<>RefCounted<>::
-startbutton.png::CompressedTexture2D::6922763457315108151::1710246894::1710247146::1::::<><>::
+TerritoryManager.gd::GDScript::-1::1713982021::0::1::::<>Node2D<>::
+territory_manager.tscn::PackedScene::6566950925841563662::1713982021::0::1::::<><>::res://TerritoryManager.gd<>uid://dmkbphtje1ucv::::res://GD-Risk-Game-SW-CW/Continent img/Madagascar.png<>uid://li3wqfiuh61x::::res://GD-Risk-Game-SW-CW/Continent img/Ural.png<>uid://b5bdytp5aa2lb::::res://GD-Risk-Game-SW-CW/Continent img/Afghanistan.png<>uid://rnwjrkika5xi::::res://GD-Risk-Game-SW-CW/Continent img/Siberia.png<>uid://cnq7wguk6inee::::res://GD-Risk-Game-SW-CW/Continent img/Yakutsk.png<>uid://3o4paeyl8ov0::::res://GD-Risk-Game-SW-CW/Continent img/Kamchatka.png<>uid://buts8hl8m5v5s::::res://GD-Risk-Game-SW-CW/Continent img/Irkutsk.png<>uid://cp8t11m73jfp::::res://GD-Risk-Game-SW-CW/Continent img/China.png<>uid://dvea31ff3ifat::::res://GD-Risk-Game-SW-CW/Continent img/Mongolia.png<>uid://c0om4ecyqvpp0::::res://GD-Risk-Game-SW-CW/Continent img/Japan.png<>uid://c3tmxwrmdjmq7::::res://GD-Risk-Game-SW-CW/Continent img/Siam.png<>uid://7fur1kh83dqb::::res://GD-Risk-Game-SW-CW/Continent img/India.png<>uid://dchygjergiut6::::res://GD-Risk-Game-SW-CW/Continent img/Indonesia.png<>uid://dg1fsxguw6jew::::res://GD-Risk-Game-SW-CW/Continent img/NewGuinea.png<>uid://dm8i6acjj5hpy::::res://GD-Risk-Game-SW-CW/Continent img/EasternAustralia.png<>uid://ce4xsn6nqkghu::::res://GD-Risk-Game-SW-CW/Continent img/WesternAustralia.png<>uid://csc2uwawarvd8::::res://GD-Risk-Game-SW-CW/Continent img/Alaska.png<>uid://b8bj2iakuxvg3::::res://GD-Risk-Game-SW-CW/Continent img/NorthwestTerritory.png<>uid://bi6qx4e4sh0f7::::res://GD-Risk-Game-SW-CW/Continent img/Alberta.png<>uid://cu4ou667m7tad::::res://GD-Risk-Game-SW-CW/Continent img/Ontario.png<>uid://cbes2d52rgxst::::res://GD-Risk-Game-SW-CW/Continent img/WesternUnitedStates.png<>uid://blt4leychgnei::::res://GD-Risk-Game-SW-CW/Continent img/EasternUnitedStates.png<>uid://e4bsj5h8uin8::::res://GD-Risk-Game-SW-CW/Continent img/Quebec.png<>uid://0fexpqpurdkd::::res://GD-Risk-Game-SW-CW/Continent img/CentralAmerica.png<>uid://b77ckr5gkys61::::res://GD-Risk-Game-SW-CW/Continent img/Venezuela.png<>uid://cbnipse6ywydb::::res://GD-Risk-Game-SW-CW/Continent img/Peru.png<>uid://c28k8hxnm7isf::::res://GD-Risk-Game-SW-CW/Continent img/Argentina.png<>uid://dgqb8724kvtkm::::res://GD-Risk-Game-SW-CW/Continent img/Brazil.png<>uid://58ar71h40oui::::res://GD-Risk-Game-SW-CW/Continent img/Greenland.png<>uid://b76kel8ja2ito::::res://GD-Risk-Game-SW-CW/Continent img/Iceland.png<>uid://cr6b55qg2si1a::::res://GD-Risk-Game-SW-CW/Continent img/GreatBritain.png<>uid://16gtsafxduee::::res://GD-Risk-Game-SW-CW/Continent img/Scandinavia.png<>uid://c58rtqn7wp2h2::::res://GD-Risk-Game-SW-CW/Continent img/NorthernEurope.png<>uid://bdsfn3hir3xs7::::res://GD-Risk-Game-SW-CW/Continent img/WesternEurope.png<>uid://ivfyrejosnsc::::res://GD-Risk-Game-SW-CW/Continent img/SouthernEurope.png<>uid://qkwx552q3pcq::::res://GD-Risk-Game-SW-CW/Continent img/Ukraine.png<>uid://bfu4gawj77doq::::res://GD-Risk-Game-SW-CW/Continent img/MiddleEast.png<>uid://cuylijdavqowv::::res://GD-Risk-Game-SW-CW/Continent img/Egypt.png<>uid://devx88vh3r0e5::::res://GD-Risk-Game-SW-CW/Continent img/EastAfrica.png<>uid://da3nsfp531xmn::::res://GD-Risk-Game-SW-CW/Continent img/NorthAfrica.png<>uid://cl7bcna6cst82::::res://GD-Risk-Game-SW-CW/Continent img/Congo.png<>uid://2ypo4gywe0bn::::res://GD-Risk-Game-SW-CW/Continent img/SouthAfrica.png
