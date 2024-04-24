@@ -6,3 +6,7 @@ res://canvas_layer.tscn
 res://GD-Risk-Game-SW-CW/GameController.cs
 res://GD-Risk-Game-SW-CW/Territory.cs
 res://buttonLayer.gd
+res://AttackContinue.gd
+res://territory_manager.gd
+res://play.gd
+res://TerritoryManager.gd

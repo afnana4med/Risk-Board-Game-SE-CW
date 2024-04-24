@@ -27,38 +27,38 @@ layer = 10
 script = ExtResource("1_bhvpq")
 
 [node name="Fortify" type="Button" parent="."]
-offset_left = 609.0
-offset_top = 431.0
-offset_right = 723.0
-offset_bottom = 479.0
+offset_left = 653.0
+offset_top = 433.0
+offset_right = 767.0
+offset_bottom = 481.0
 text = "Fortify"
 
 [node name="End Turn" type="Button" parent="."]
-offset_left = 744.0
-offset_top = 432.0
-offset_right = 842.0
-offset_bottom = 479.0
+offset_left = 784.0
+offset_top = 434.0
+offset_right = 883.0
+offset_bottom = 482.0
 text = "End Turn"
 
 [node name="Trade-In Cards" type="Button" parent="."]
-offset_left = 860.0
-offset_top = 434.0
-offset_right = 981.0
-offset_bottom = 480.0
+offset_left = 901.0
+offset_top = 437.0
+offset_right = 1022.0
+offset_bottom = 483.0
 text = "Trade-In Cards"
 
 [node name="Next Phase" type="Button" parent="."]
-offset_left = 311.0
-offset_top = 430.0
-offset_right = 432.0
-offset_bottom = 476.0
+offset_left = 372.0
+offset_top = 433.0
+offset_right = 493.0
+offset_bottom = 479.0
 text = "Next Phase"
 
 [node name="Deploy Troops" type="Button" parent="."]
-offset_left = 6.0
-offset_top = 432.0
-offset_right = 195.0
-offset_bottom = 478.0
+offset_left = 33.0
+offset_top = 428.0
+offset_right = 222.0
+offset_bottom = 482.0
 text = "Random Deploy Troops"
 script = SubResource("GDScript_hravp")
 
@@ -71,10 +71,10 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_4eta7")
 text = "Roll Dice"
 
 [node name="Attack" type="Button" parent="."]
-offset_left = 465.0
-offset_top = 430.0
-offset_right = 586.0
-offset_bottom = 476.0
+offset_left = 514.0
+offset_top = 435.0
+offset_right = 632.0
+offset_bottom = 479.0
 text = "Attack"
 
 [node name="ConfirmationDialog" type="ConfirmationDialog" parent="."]
@@ -94,10 +94,10 @@ text = "End Attack Phase
 "
 
 [node name="Start Turn" type="Button" parent="."]
-offset_left = 180.0
-offset_top = 527.0
-offset_right = 312.0
-offset_bottom = 556.0
+offset_left = 242.0
+offset_top = 430.0
+offset_right = 352.0
+offset_bottom = 480.0
 text = "Start Turn"
 
 [connection signal="pressed" from="Fortify" to="." method="_on_fortify_pressed"]

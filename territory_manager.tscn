@@ -1,6 +1,6 @@
-[gd_scene load_steps=44 format=3 uid="uid://ihmoqhrmgj6a"]
+[gd_scene load_steps=44 format=3 uid="uid://c0tcys8qjih8a"]
 
-[ext_resource type="Script" path="res://GD-Risk-Game-SW-CW/TerritoryManager.gd" id="1_qn7ck"]
+[ext_resource type="Script" path="res://TerritoryManager.gd" id="1_2iuky"]
 [ext_resource type="Texture2D" uid="uid://dmkbphtje1ucv" path="res://GD-Risk-Game-SW-CW/Continent img/Madagascar.png" id="2_yj72g"]
 [ext_resource type="Texture2D" uid="uid://li3wqfiuh61x" path="res://GD-Risk-Game-SW-CW/Continent img/Ural.png" id="3_uhhpb"]
 [ext_resource type="Texture2D" uid="uid://b5bdytp5aa2lb" path="res://GD-Risk-Game-SW-CW/Continent img/Afghanistan.png" id="4_pm5jv"]
@@ -47,7 +47,7 @@
 [node name="TerritoryManager" type="Node2D"]
 position = Vector2(488, 315)
 scale = Vector2(0.1, 0.1)
-script = ExtResource("1_qn7ck")
+script = ExtResource("1_2iuky")
 
 [node name="Africa - Madagascar" type="TextureButton" parent="."]
 offset_left = 2198.0
@@ -428,6 +428,7 @@ texture_normal = ExtResource("43_dg7of")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
+[connection signal="pressed" from="Africa - Madagascar" to="." method="handle_territory_selection"]
 [connection signal="pressed" from="Asia - Ural" to="." method="_on_TerritoryButton_Pressed"]
 [connection signal="pressed" from="Asia - Afghanistan" to="." method="_on_TerritoryButton_Pressed"]
 [connection signal="pressed" from="Asia - Siberia" to="." method="_on_TerritoryButton_Pressed"]
