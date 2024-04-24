@@ -1,0 +1,433 @@
+[gd_scene load_steps=44 format=3 uid="uid://ihmoqhrmgj6a"]
+
+[ext_resource type="Script" path="res://GD-Risk-Game-SW-CW/TerritoryManager.gd" id="1_qn7ck"]
+[ext_resource type="Texture2D" uid="uid://dmkbphtje1ucv" path="res://GD-Risk-Game-SW-CW/Continent img/Madagascar.png" id="2_yj72g"]
+[ext_resource type="Texture2D" uid="uid://li3wqfiuh61x" path="res://GD-Risk-Game-SW-CW/Continent img/Ural.png" id="3_uhhpb"]
+[ext_resource type="Texture2D" uid="uid://b5bdytp5aa2lb" path="res://GD-Risk-Game-SW-CW/Continent img/Afghanistan.png" id="4_pm5jv"]
+[ext_resource type="Texture2D" uid="uid://rnwjrkika5xi" path="res://GD-Risk-Game-SW-CW/Continent img/Siberia.png" id="5_kps6o"]
+[ext_resource type="Texture2D" uid="uid://cnq7wguk6inee" path="res://GD-Risk-Game-SW-CW/Continent img/Yakutsk.png" id="6_bjw1r"]
+[ext_resource type="Texture2D" uid="uid://3o4paeyl8ov0" path="res://GD-Risk-Game-SW-CW/Continent img/Kamchatka.png" id="7_6trfg"]
+[ext_resource type="Texture2D" uid="uid://buts8hl8m5v5s" path="res://GD-Risk-Game-SW-CW/Continent img/Irkutsk.png" id="8_tqooo"]
+[ext_resource type="Texture2D" uid="uid://cp8t11m73jfp" path="res://GD-Risk-Game-SW-CW/Continent img/China.png" id="9_upqhh"]
+[ext_resource type="Texture2D" uid="uid://dvea31ff3ifat" path="res://GD-Risk-Game-SW-CW/Continent img/Mongolia.png" id="10_kxgac"]
+[ext_resource type="Texture2D" uid="uid://c0om4ecyqvpp0" path="res://GD-Risk-Game-SW-CW/Continent img/Japan.png" id="11_1ecu7"]
+[ext_resource type="Texture2D" uid="uid://c3tmxwrmdjmq7" path="res://GD-Risk-Game-SW-CW/Continent img/Siam.png" id="12_tbdfa"]
+[ext_resource type="Texture2D" uid="uid://7fur1kh83dqb" path="res://GD-Risk-Game-SW-CW/Continent img/India.png" id="13_kiypq"]
+[ext_resource type="Texture2D" uid="uid://dchygjergiut6" path="res://GD-Risk-Game-SW-CW/Continent img/Indonesia.png" id="14_d8myd"]
+[ext_resource type="Texture2D" uid="uid://dg1fsxguw6jew" path="res://GD-Risk-Game-SW-CW/Continent img/NewGuinea.png" id="15_vr7kg"]
+[ext_resource type="Texture2D" uid="uid://dm8i6acjj5hpy" path="res://GD-Risk-Game-SW-CW/Continent img/EasternAustralia.png" id="16_gek26"]
+[ext_resource type="Texture2D" uid="uid://ce4xsn6nqkghu" path="res://GD-Risk-Game-SW-CW/Continent img/WesternAustralia.png" id="17_2t3ng"]
+[ext_resource type="Texture2D" uid="uid://csc2uwawarvd8" path="res://GD-Risk-Game-SW-CW/Continent img/Alaska.png" id="18_8dsiy"]
+[ext_resource type="Texture2D" uid="uid://b8bj2iakuxvg3" path="res://GD-Risk-Game-SW-CW/Continent img/NorthwestTerritory.png" id="19_u2lcl"]
+[ext_resource type="Texture2D" uid="uid://bi6qx4e4sh0f7" path="res://GD-Risk-Game-SW-CW/Continent img/Alberta.png" id="20_0tim5"]
+[ext_resource type="Texture2D" uid="uid://cu4ou667m7tad" path="res://GD-Risk-Game-SW-CW/Continent img/Ontario.png" id="21_fl07c"]
+[ext_resource type="Texture2D" uid="uid://cbes2d52rgxst" path="res://GD-Risk-Game-SW-CW/Continent img/WesternUnitedStates.png" id="22_2et7c"]
+[ext_resource type="Texture2D" uid="uid://blt4leychgnei" path="res://GD-Risk-Game-SW-CW/Continent img/EasternUnitedStates.png" id="23_y1wdq"]
+[ext_resource type="Texture2D" uid="uid://e4bsj5h8uin8" path="res://GD-Risk-Game-SW-CW/Continent img/Quebec.png" id="24_1sp3c"]
+[ext_resource type="Texture2D" uid="uid://0fexpqpurdkd" path="res://GD-Risk-Game-SW-CW/Continent img/CentralAmerica.png" id="25_24rdb"]
+[ext_resource type="Texture2D" uid="uid://b77ckr5gkys61" path="res://GD-Risk-Game-SW-CW/Continent img/Venezuela.png" id="26_wpj27"]
+[ext_resource type="Texture2D" uid="uid://cbnipse6ywydb" path="res://GD-Risk-Game-SW-CW/Continent img/Peru.png" id="27_v7wqs"]
+[ext_resource type="Texture2D" uid="uid://c28k8hxnm7isf" path="res://GD-Risk-Game-SW-CW/Continent img/Argentina.png" id="28_aw6rp"]
+[ext_resource type="Texture2D" uid="uid://dgqb8724kvtkm" path="res://GD-Risk-Game-SW-CW/Continent img/Brazil.png" id="29_q8k7x"]
+[ext_resource type="Texture2D" uid="uid://58ar71h40oui" path="res://GD-Risk-Game-SW-CW/Continent img/Greenland.png" id="30_v6j4e"]
+[ext_resource type="Texture2D" uid="uid://b76kel8ja2ito" path="res://GD-Risk-Game-SW-CW/Continent img/Iceland.png" id="31_4q7iw"]
+[ext_resource type="Texture2D" uid="uid://cr6b55qg2si1a" path="res://GD-Risk-Game-SW-CW/Continent img/GreatBritain.png" id="32_16o0e"]
+[ext_resource type="Texture2D" uid="uid://16gtsafxduee" path="res://GD-Risk-Game-SW-CW/Continent img/Scandinavia.png" id="33_lp0m7"]
+[ext_resource type="Texture2D" uid="uid://c58rtqn7wp2h2" path="res://GD-Risk-Game-SW-CW/Continent img/NorthernEurope.png" id="34_hsalo"]
+[ext_resource type="Texture2D" uid="uid://bdsfn3hir3xs7" path="res://GD-Risk-Game-SW-CW/Continent img/WesternEurope.png" id="35_4ayj5"]
+[ext_resource type="Texture2D" uid="uid://ivfyrejosnsc" path="res://GD-Risk-Game-SW-CW/Continent img/SouthernEurope.png" id="36_7v5wk"]
+[ext_resource type="Texture2D" uid="uid://qkwx552q3pcq" path="res://GD-Risk-Game-SW-CW/Continent img/Ukraine.png" id="37_8d2ik"]
+[ext_resource type="Texture2D" uid="uid://bfu4gawj77doq" path="res://GD-Risk-Game-SW-CW/Continent img/MiddleEast.png" id="38_7eohh"]
+[ext_resource type="Texture2D" uid="uid://cuylijdavqowv" path="res://GD-Risk-Game-SW-CW/Continent img/Egypt.png" id="39_skm0m"]
+[ext_resource type="Texture2D" uid="uid://devx88vh3r0e5" path="res://GD-Risk-Game-SW-CW/Continent img/EastAfrica.png" id="40_pip6m"]
+[ext_resource type="Texture2D" uid="uid://da3nsfp531xmn" path="res://GD-Risk-Game-SW-CW/Continent img/NorthAfrica.png" id="41_jjlju"]
+[ext_resource type="Texture2D" uid="uid://cl7bcna6cst82" path="res://GD-Risk-Game-SW-CW/Continent img/Congo.png" id="42_gys0f"]
+[ext_resource type="Texture2D" uid="uid://2ypo4gywe0bn" path="res://GD-Risk-Game-SW-CW/Continent img/SouthAfrica.png" id="43_dg7of"]
+
+[node name="TerritoryManager" type="Node2D"]
+position = Vector2(488, 315)
+scale = Vector2(0.1, 0.1)
+script = ExtResource("1_qn7ck")
+
+[node name="Africa - Madagascar" type="TextureButton" parent="."]
+offset_left = 2198.0
+offset_top = 800.0
+offset_right = 2653.0
+offset_bottom = 1444.0
+texture_normal = ExtResource("2_yj72g")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Asia - Ural" type="TextureButton" parent="."]
+offset_left = 2260.0
+offset_top = -2875.0
+offset_right = 3339.0
+offset_bottom = -1600.0
+texture_normal = ExtResource("3_uhhpb")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Asia - Afghanistan" type="TextureButton" parent="."]
+offset_left = 1893.0
+offset_top = -2021.0
+offset_right = 3120.0
+offset_bottom = -972.0
+texture_normal = ExtResource("4_pm5jv")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Asia - Siberia" type="TextureButton" parent="."]
+offset_left = 2600.0
+offset_top = -3044.0
+offset_right = 3806.0
+offset_bottom = -1436.0
+texture_normal = ExtResource("5_kps6o")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Asia - Yakutsk" type="TextureButton" parent="."]
+offset_left = 3572.0
+offset_top = -3034.0
+offset_right = 4554.0
+offset_bottom = -2233.0
+texture_normal = ExtResource("6_bjw1r")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Asia - Kamchatka" type="TextureButton" parent="."]
+offset_left = 4020.0
+offset_top = -2938.0
+offset_right = 5793.0
+offset_bottom = -1396.0
+texture_normal = ExtResource("7_6trfg")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Asia - Irkutsk" type="TextureButton" parent="."]
+offset_left = 3444.0
+offset_top = -2372.0
+offset_right = 4569.0
+offset_bottom = -1605.0
+texture_normal = ExtResource("8_tqooo")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Asia - China" type="TextureButton" parent="."]
+offset_left = 2846.0
+offset_top = -1806.0
+offset_right = 4532.0
+offset_bottom = -326.0
+texture_normal = ExtResource("9_upqhh")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Asia - Mongolia" type="TextureButton" parent="."]
+offset_left = 3562.0
+offset_top = -1679.0
+offset_right = 4871.0
+offset_bottom = -1186.0
+texture_normal = ExtResource("10_kxgac")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Asia - Japan" type="TextureButton" parent="."]
+offset_left = 5131.0
+offset_top = -1592.0
+offset_right = 5577.0
+offset_bottom = -720.0
+texture_normal = ExtResource("11_1ecu7")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Asia - Siam" type="TextureButton" parent="."]
+offset_left = 2531.0
+offset_top = -1423.0
+offset_right = 3296.0
+offset_bottom = -582.0
+texture_normal = ExtResource("12_tbdfa")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Asia - India" type="TextureButton" parent="."]
+offset_left = 2322.0
+offset_top = -1143.0
+offset_right = 3786.0
+offset_bottom = 124.0
+texture_normal = ExtResource("13_kiypq")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Australia - Indonesia" type="TextureButton" parent="."]
+offset_left = 3678.0
+offset_top = 437.0
+offset_right = 4599.0
+offset_bottom = 1170.0
+texture_normal = ExtResource("14_d8myd")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Australia - NewGuinea" type="TextureButton" parent="."]
+offset_left = 4618.0
+offset_top = 180.0
+offset_right = 5321.0
+offset_bottom = 726.0
+texture_normal = ExtResource("15_vr7kg")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Australia - EasternAustralia" type="TextureButton" parent="."]
+offset_left = 4715.0
+offset_top = 938.0
+offset_right = 5588.0
+offset_bottom = 1852.0
+texture_normal = ExtResource("16_gek26")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Australia - WesternAustralia" type="TextureButton" parent="."]
+offset_left = 4341.0
+offset_top = 971.0
+offset_right = 5202.0
+offset_bottom = 1844.0
+texture_normal = ExtResource("17_2t3ng")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="North America - Alaska" type="TextureButton" parent="."]
+offset_left = -4368.0
+offset_top = -2523.0
+offset_right = -3341.0
+offset_bottom = -1691.0
+texture_normal = ExtResource("18_8dsiy")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="North America - NorthWestTerritory" type="TextureButton" parent="."]
+offset_left = -3471.0
+offset_top = -2755.0
+offset_right = -2349.0
+offset_bottom = -2011.0
+texture_normal = ExtResource("19_u2lcl")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="North America - Alberta" type="TextureButton" parent="."]
+offset_left = -3426.0
+offset_top = -2021.0
+offset_right = -2881.0
+offset_bottom = -1606.0
+texture_normal = ExtResource("20_0tim5")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="North America - Ontario" type="TextureButton" parent="."]
+offset_left = -2985.0
+offset_top = -2032.0
+offset_right = -2461.0
+offset_bottom = -1413.0
+texture_normal = ExtResource("21_fl07c")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="North America - WesternUnitedStates" type="TextureButton" parent="."]
+offset_left = -3494.0
+offset_top = -1614.0
+offset_right = -2892.0
+offset_bottom = -1137.0
+texture_normal = ExtResource("22_2et7c")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="North America - EasternUnitedStates" type="TextureButton" parent="."]
+offset_left = -3180.0
+offset_top = -1591.0
+offset_right = -2353.0
+offset_bottom = -1104.0
+texture_normal = ExtResource("23_y1wdq")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="North America - Quebec" type="TextureButton" parent="."]
+offset_left = -2555.0
+offset_top = -2021.0
+offset_right = -1862.0
+offset_bottom = -1461.0
+texture_normal = ExtResource("24_1sp3c")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="North America - CentralAmerica" type="TextureButton" parent="."]
+offset_left = -3523.0
+offset_top = -1263.0
+offset_right = -2659.0
+offset_bottom = -328.0
+texture_normal = ExtResource("25_24rdb")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="South America - Venezulea" type="TextureButton" parent="."]
+offset_left = -3066.0
+offset_top = -538.0
+offset_right = -2026.0
+offset_bottom = 276.0
+texture_normal = ExtResource("26_wpj27")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="South America - Peru" type="TextureButton" parent="."]
+offset_left = -3159.0
+offset_top = 95.0
+offset_right = -2358.0
+offset_bottom = 1048.0
+texture_normal = ExtResource("27_v7wqs")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="South America - Argentina" type="TextureButton" parent="."]
+offset_left = -3065.0
+offset_top = 808.0
+offset_right = -2280.0
+offset_bottom = 2127.0
+texture_normal = ExtResource("28_aw6rp")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="South America - Brazil" type="TextureButton" parent="."]
+offset_left = -2984.0
+offset_top = -79.0
+offset_right = -1529.0
+offset_bottom = 1334.0
+texture_normal = ExtResource("29_q8k7x")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="North America - Greenland" type="TextureButton" parent="."]
+offset_left = -1773.0
+offset_top = -2878.0
+offset_right = -646.0
+offset_bottom = -1901.0
+texture_normal = ExtResource("30_v6j4e")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Europe - Iceland" type="TextureButton" parent="."]
+offset_left = -199.0
+offset_top = -2474.0
+offset_right = 332.0
+offset_bottom = -2020.0
+texture_normal = ExtResource("31_4q7iw")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Europe - GreatBritian" type="TextureButton" parent="."]
+offset_left = -281.0
+offset_top = -1843.0
+offset_right = 320.0
+offset_bottom = -1205.0
+texture_normal = ExtResource("32_16o0e")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Europe - Scandinavia" type="TextureButton" parent="."]
+offset_left = 430.0
+offset_top = -2700.0
+offset_right = 1478.0
+offset_bottom = -2038.0
+texture_normal = ExtResource("33_lp0m7")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Europe - NorthernEurope" type="TextureButton" parent="."]
+offset_left = 518.0
+offset_top = -1799.0
+offset_right = 1184.0
+offset_bottom = -1167.0
+texture_normal = ExtResource("34_hsalo")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Europe - WesternEurope" type="TextureButton" parent="."]
+offset_left = -52.0
+offset_top = -1304.0
+offset_right = 722.0
+offset_bottom = -569.0
+texture_normal = ExtResource("35_4ayj5")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Europe - SouthernEurope" type="TextureButton" parent="."]
+offset_left = 646.0
+offset_top = -1282.0
+offset_right = 1180.0
+offset_bottom = -773.0
+texture_normal = ExtResource("36_7v5wk")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Europe - Ukraine" type="TextureButton" parent="."]
+offset_left = 1198.0
+offset_top = -2716.0
+offset_right = 2504.0
+offset_bottom = -1215.0
+texture_normal = ExtResource("37_8d2ik")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Asia - MiddleEast" type="TextureButton" parent="."]
+offset_left = 1093.0
+offset_top = -1222.0
+offset_right = 2392.0
+offset_bottom = -67.0
+texture_normal = ExtResource("38_7eohh")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Africa - Egypt" type="TextureButton" parent="."]
+offset_left = 846.0
+offset_top = -592.0
+offset_right = 1575.0
+offset_bottom = 33.0
+texture_normal = ExtResource("39_skm0m")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Africa - EastAfrica" type="TextureButton" parent="."]
+offset_left = 1123.0
+offset_top = -106.0
+offset_right = 2234.0
+offset_bottom = 1261.0
+rotation = -0.132734
+texture_normal = ExtResource("40_pip6m")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Africa - NorthAfrica" type="TextureButton" parent="."]
+offset_left = -70.0
+offset_top = -693.0
+offset_right = 1267.0
+offset_bottom = 626.0
+texture_normal = ExtResource("41_jjlju")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Africa - Congo" type="TextureButton" parent="."]
+offset_left = 680.0
+offset_top = 272.0
+offset_right = 1691.0
+offset_bottom = 1153.0
+texture_normal = ExtResource("42_gys0f")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Africa - SouthAfrica" type="TextureButton" parent="."]
+offset_left = 835.0
+offset_top = 897.0
+offset_right = 1952.0
+offset_bottom = 2011.0
+texture_normal = ExtResource("43_dg7of")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Africa - Madagascar" to="." method="_on_TerritoryButton_Pressed"]
+[connection signal="pressed" from="North America - Alaska" to="." method="_on_TerritoryButton_Pressed"]
+[connection signal="pressed" from="North America - NorthWestTerritory" to="." method="_on_TerritoryButton_Pressed"]

@@ -1,0 +1,5 @@
+res://main.tscn
+res://GD-Risk-Game-SW-CW/TerritoryManager.gd
+res://GD-Risk-Game-SW-CW/continents.tscn
+res://territory_manager.tscn
+res://canvas_layer.tscn
