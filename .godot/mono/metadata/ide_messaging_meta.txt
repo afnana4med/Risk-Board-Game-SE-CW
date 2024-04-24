@@ -1,0 +1,2 @@
+﻿58464
+C:/Users/Admin/Desktop/GD for C#/Godot_v4.2.1-stable_mono_win64.exe

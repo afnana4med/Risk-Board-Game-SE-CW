@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\practice game development\\Practice.csproj": {}
+    "D:\\practice game development\\Risk-Board-Game-SE-CW\\Practice.csproj": {}
   },
   "projects": {
-    "D:\\practice game development\\Practice.csproj": {
+    "D:\\practice game development\\Risk-Board-Game-SE-CW\\Practice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\practice game development\\Practice.csproj",
+        "projectUniqueName": "D:\\practice game development\\Risk-Board-Game-SE-CW\\Practice.csproj",
         "projectName": "Practice",
-        "projectPath": "D:\\practice game development\\Practice.csproj",
+        "projectPath": "D:\\practice game development\\Risk-Board-Game-SE-CW\\Practice.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\practice game development\\.godot\\mono\\temp\\obj\\",
+        "outputPath": "D:\\practice game development\\Risk-Board-Game-SE-CW\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
