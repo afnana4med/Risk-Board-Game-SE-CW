@@ -1,10 +1,10 @@
 extends CanvasLayer
 
-@export var game_controller: Node
+#@export var game_controller: Node
 
 @export var Player: Node
 
-@export var TerritoryManager: Node
+#@export var TerritoryManager: Node
 
 
 func _on_deploy_troops_pressed():
@@ -19,12 +19,22 @@ func _on_next_phase_pressed():
 #////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-func _on_dice_pressed():
-	game_controller.RollDice()
-	
-	
-	
-	
+
+
+
+
+#
+#
+#func _on_roll_dice_button_pressed():
+	#var attacker_dice_count = attacker_dice.value
+	#var attacker_rolls = game_controller.RollDice(attacker_dice_count)  # Call C# method
+	#var defender_dice_count = defender_dice.value
+	#var defender_rolls = game_controller.RollDice(defender_dice_count)  # Call C# method
+	#update_dice_results(attacker_rolls, defender_rolls)
+#
+#func update_dice_results(attacker_rolls, defender_rolls):
+	#var result_text = "Attacker Rolls: %s\nDefender Rolls: %s" % [attacker_rolls, defender_rolls]
+	#dice_results.text = result_text
 
 
 	
@@ -87,10 +97,9 @@ func _on_end_turn_pressed():
 func _on_start_turn_pressed():
 	game_controller.StartTurn()
 
+#@export(NodePath) var territory_manager_path: Node
+#var territory_manager: TerritoryManager
 
-
-
-
+	
 func _on_attack_pressed():
-	print("hello") # Replace with function body.
-	TerritoryManager.free()
+	TerritoryManager.resolve_attack()

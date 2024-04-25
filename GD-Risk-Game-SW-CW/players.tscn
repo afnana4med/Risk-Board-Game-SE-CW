@@ -1,0 +1,210 @@
+[gd_scene load_steps=9 format=3 uid="uid://br7pi5rj3id8m"]
+
+[ext_resource type="Texture2D" uid="uid://bvj8wqf2ft7nt" path="res://GD-Risk-Game-SW-CW/Player Setup/menu_background.png" id="1_gf1lb"]
+[ext_resource type="Script" path="res://GD-Risk-Game-SW-CW/players.cs" id="1_qtdk3"]
+[ext_resource type="Texture2D" uid="uid://c5vo5xsiwj3ex" path="res://GD-Risk-Game-SW-CW/Player Setup/startbutton.png" id="2_xfltt"]
+[ext_resource type="Script" path="res://GD-Risk-Game-SW-CW/Player Setup/Button.gd" id="3_2p0ek"]
+[ext_resource type="Script" path="res://GD-Risk-Game-SW-CW/DropDownMenu.cs" id="4_2mijy"]
+[ext_resource type="Script" path="res://GD-Risk-Game-SW-CW/PlayerTypeDropdown1.cs" id="5_4v68s"]
+
+[sub_resource type="SystemFont" id="SystemFont_0he2u"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_n88lu"]
+script/source = "using Godot;
+using System.Collections.Generic;
+
+public partial class GameController : Node
+{
+	private Dictionary<int, string> playerTypes = new Dictionary<int, string>();
+
+	public override void _Ready()
+	{
+	   base._Ready();
+	   ConnectDropDownMenus();
+	}
+
+	private void ConnectDropDownMenus()
+	{
+	   for (int i = 1; i <= 6; i++)
+	   {
+		  DropDownMenu dropdown = GetNode<DropDownMenu>($\"PlayerTypeDropdown{i}\");
+		  if (dropdown != null)
+		  {
+			 dropdown.PlayerSlot = i; // Ensure this is set correctly either here or elsewhere before connections
+			 
+			 dropdown.Connect(nameof(DropDownMenu.PlayerSelectionChanged), this, nameof(OnPlayerTypeSelected));
+		  }
+	   }
+	}
+
+	private void OnPlayerTypeSelected(int playerSlot, string selection)
+	{
+	   GD.Print($\"Player {playerSlot} selected: {selection}\");
+	   playerTypes[playerSlot] = selection; // Update player type
+	   UpdatePlayerCountAndType(); // Implement this method to handle changes
+	}
+	
+	
+	private void UpdatePlayerCountAndType()
+	{
+	   int numberOfPlayers = 0;
+	   foreach (var type in playerTypes.Values)
+	   {
+		  if (type != \"None\") numberOfPlayers++;
+	   }
+
+	   GD.Print($\"Number of Players: {numberOfPlayers}\");
+	   // Here you can update any UI elements or game settings based on the number of active players
+	}
+}
+"
+
+[node name="Player Setup" type="Node2D"]
+script = ExtResource("1_qtdk3")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="MenuBackground" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(2.50005, -2.00006)
+scale = Vector2(0.769271, 0.6)
+texture = ExtResource("1_gf1lb")
+
+[node name="Startbutton" type="Sprite2D" parent="."]
+position = Vector2(5, 81)
+texture = ExtResource("2_xfltt")
+
+[node name="p3" type="TextEdit" parent="Startbutton"]
+offset_left = -381.0
+offset_top = -24.0
+offset_right = -204.0
+offset_bottom = 42.0
+theme_override_colors/background_color = Color(0.0313726, 0.643137, 0.643137, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_0he2u")
+theme_override_font_sizes/font_size = 40
+text = "PLayer 3"
+
+[node name="p6" type="TextEdit" parent="Startbutton"]
+offset_left = 87.0
+offset_top = -18.0
+offset_right = 256.0
+offset_bottom = 37.0
+theme_override_colors/background_color = Color(0.0313726, 0.643137, 0.643137, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_0he2u")
+theme_override_font_sizes/font_size = 40
+text = "Player 6"
+
+[node name="p5" type="TextEdit" parent="Startbutton"]
+offset_left = 81.0
+offset_top = -146.0
+offset_right = 250.0
+offset_bottom = -91.0
+theme_override_colors/background_color = Color(0.0313726, 0.643137, 0.643137, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_0he2u")
+theme_override_font_sizes/font_size = 40
+text = "Player 5"
+
+[node name="p4" type="TextEdit" parent="Startbutton"]
+offset_left = 73.0
+offset_top = -288.0
+offset_right = 242.0
+offset_bottom = -233.0
+theme_override_colors/background_color = Color(0.0313726, 0.643137, 0.643137, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_0he2u")
+theme_override_font_sizes/font_size = 40
+text = "Player 4"
+
+[node name="p2" type="TextEdit" parent="Startbutton"]
+offset_left = -376.0
+offset_top = -153.0
+offset_right = -207.0
+offset_bottom = -98.0
+theme_override_colors/background_color = Color(0.0313726, 0.643137, 0.643137, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_0he2u")
+theme_override_font_sizes/font_size = 40
+text = "Player 2"
+
+[node name="p1" type="TextEdit" parent="Startbutton"]
+offset_left = -379.0
+offset_top = -292.0
+offset_right = -210.0
+offset_bottom = -237.0
+theme_override_colors/background_color = Color(0.0313726, 0.643137, 0.643137, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("SystemFont_0he2u")
+theme_override_font_sizes/font_size = 40
+text = "Player 1"
+
+[node name="StartButton" type="Button" parent="Startbutton"]
+offset_left = -83.0
+offset_top = 95.0
+offset_right = 69.0
+offset_bottom = 142.0
+script = ExtResource("3_2p0ek")
+
+[node name="Label" type="Label" parent="Startbutton/StartButton"]
+layout_mode = 0
+offset_left = 25.0
+offset_right = 167.0
+offset_bottom = 67.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 30
+text = "START"
+
+[node name="GameController" type="Node" parent="."]
+script = SubResource("CSharpScript_n88lu")
+
+[node name="PlayerTypeDropdown1" type="OptionButton" parent="GameController"]
+offset_left = -178.0
+offset_top = -203.0
+offset_right = -28.0
+offset_bottom = -146.0
+script = ExtResource("5_4v68s")
+
+[node name="PlayerTypeDropdown2" type="OptionButton" parent="GameController"]
+offset_left = -172.0
+offset_top = -69.0
+offset_right = -22.0
+offset_bottom = -12.0
+script = ExtResource("4_2mijy")
+
+[node name="PlayerTypeDropdown3" type="OptionButton" parent="GameController"]
+offset_left = -170.0
+offset_top = 63.0
+offset_right = -20.0
+offset_bottom = 120.0
+script = ExtResource("4_2mijy")
+
+[node name="PlayerTypeDropdown4" type="OptionButton" parent="GameController"]
+offset_left = 286.0
+offset_top = -205.0
+offset_right = 436.0
+offset_bottom = -148.0
+script = ExtResource("4_2mijy")
+
+[node name="PlayerTypeDropdown5" type="OptionButton" parent="GameController"]
+offset_left = 280.0
+offset_top = -59.0
+offset_right = 430.0
+offset_bottom = -2.0
+script = ExtResource("4_2mijy")
+
+[node name="PlayerTypeDropdown6" type="OptionButton" parent="GameController"]
+offset_left = 294.0
+offset_top = 65.0
+offset_right = 444.0
+offset_bottom = 122.0
+script = ExtResource("4_2mijy")
+
+[connection signal="pressed" from="Startbutton/StartButton" to="Startbutton/StartButton" method="_on_pressed"]
+[connection signal="item_selected" from="GameController/PlayerTypeDropdown1" to="GameController/PlayerTypeDropdown1" method="_on_item_selected"]
+[connection signal="item_selected" from="GameController/PlayerTypeDropdown2" to="GameController/PlayerTypeDropdown2" method="_on_item_selected"]
+[connection signal="item_selected" from="GameController/PlayerTypeDropdown3" to="GameController/PlayerTypeDropdown3" method="_on_item_selected"]
+[connection signal="item_selected" from="GameController/PlayerTypeDropdown4" to="GameController/PlayerTypeDropdown4" method="_on_item_selected"]
+[connection signal="item_selected" from="GameController/PlayerTypeDropdown5" to="GameController/PlayerTypeDropdown5" method="_on_item_selected"]
+[connection signal="item_selected" from="GameController/PlayerTypeDropdown6" to="GameController/PlayerTypeDropdown6" method="_on_item_selected"]

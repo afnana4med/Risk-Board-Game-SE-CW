@@ -17,9 +17,9 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-GameController="*res://GD-Risk-Game-SW-CW/GameController.cs"
+game_controller="*res://GD-Risk-Game-SW-CW/GameController.cs"
+TerritoryManager="*res://TerritoryManager.gd"
 Player="*res://GD-Risk-Game-SW-CW/Player.cs"
-Territory="*res://GD-Risk-Game-SW-CW/Territory.cs"
 
 [dotnet]
 
