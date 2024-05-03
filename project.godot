@@ -11,15 +11,15 @@ config_version=5
 [application]
 
 config/name="Practice"
-run/main_scene="res://main.tscn"
+run/main_scene="res://GD-Risk-Game-SW-CW/main.tscn"
 config/features=PackedStringArray("4.2", "C#", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
 
 game_controller="*res://GD-Risk-Game-SW-CW/GameController.cs"
-TerritoryManager="*res://TerritoryManager.gd"
 Player="*res://GD-Risk-Game-SW-CW/Player.cs"
+Territory="*res://GD-Risk-Game-SW-CW/Territory.cs"
 
 [dotnet]
 

@@ -1,0 +1,143 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxmmgtqmxu62j"]
+
+[ext_resource type="Script" path="res://buttonLayer.gd" id="1_bhvpq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4eta7"]
+bg_color = Color(0.686275, 0.486275, 0.917647, 1)
+corner_radius_top_left = 1024
+corner_radius_top_right = 1024
+corner_radius_bottom_right = 1024
+corner_radius_bottom_left = 1024
+
+[node name="button_layer" type="CanvasLayer"]
+layer = 10
+script = ExtResource("1_bhvpq")
+
+[node name="Fortify" type="Button" parent="."]
+offset_left = 653.0
+offset_top = 433.0
+offset_right = 767.0
+offset_bottom = 481.0
+text = "Fortify"
+
+[node name="End Turn" type="Button" parent="."]
+offset_left = 784.0
+offset_top = 434.0
+offset_right = 883.0
+offset_bottom = 482.0
+text = "End Turn"
+
+[node name="Trade-In Cards" type="Button" parent="."]
+offset_left = 901.0
+offset_top = 437.0
+offset_right = 1022.0
+offset_bottom = 483.0
+text = "Trade-In Cards"
+
+[node name="Next Phase" type="Button" parent="."]
+offset_left = 372.0
+offset_top = 433.0
+offset_right = 493.0
+offset_bottom = 479.0
+text = "Next Phase"
+
+[node name="Deploy Troops" type="Button" parent="."]
+offset_left = 33.0
+offset_top = 428.0
+offset_right = 222.0
+offset_bottom = 482.0
+text = "Random Deploy Troops"
+
+[node name="Start Turn" type="Button" parent="."]
+offset_left = 242.0
+offset_top = 430.0
+offset_right = 352.0
+offset_bottom = 480.0
+text = "Start Turn"
+
+[node name="AttackPanel" type="Panel" parent="."]
+offset_left = -20.0
+offset_top = -10.0
+offset_right = 20.0
+offset_bottom = 30.0
+
+[node name="RollDiceButton" type="Button" parent="AttackPanel"]
+layout_mode = 0
+offset_left = 1065.0
+offset_top = 514.0
+offset_right = 1157.0
+offset_bottom = 599.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_4eta7")
+text = "Roll Dice"
+
+[node name="DiceResults" type="Label" parent="AttackPanel"]
+layout_mode = 0
+offset_left = 846.0
+offset_top = 509.0
+offset_right = 1059.0
+offset_bottom = 532.0
+
+[node name="AttackerDice" type="SpinBox" parent="AttackPanel"]
+layout_mode = 0
+offset_left = 831.0
+offset_top = 547.0
+offset_right = 929.0
+offset_bottom = 588.0
+min_value = 1.0
+max_value = 3.0
+value = 1.0
+alignment = 1
+
+[node name="Label" type="Label" parent="AttackPanel/AttackerDice"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 43.0
+offset_right = 111.0
+offset_bottom = 81.0
+text = "Attacker"
+
+[node name="DefenderDice" type="SpinBox" parent="AttackPanel"]
+layout_mode = 0
+offset_left = 953.0
+offset_top = 547.0
+offset_right = 1046.0
+offset_bottom = 588.0
+min_value = 1.0
+max_value = 2.0
+value = 1.0
+alignment = 1
+
+[node name="Label" type="Label" parent="AttackPanel/DefenderDice"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 42.0
+offset_right = 77.0
+offset_bottom = 65.0
+text = "Defender"
+
+[node name="Attack" type="Button" parent="AttackPanel"]
+layout_mode = 0
+offset_left = 534.0
+offset_top = 445.0
+offset_right = 652.0
+offset_bottom = 489.0
+text = "Attack"
+
+[node name="ConfirmationDialog" type="ConfirmationDialog" parent="AttackPanel"]
+title = "Are you Hungry for more terriotories?"
+position = Vector2i(280, 167)
+size = Vector2i(552, 100)
+ok_button_text = "Continue Attacking"
+dialog_hide_on_ok = false
+cancel_button_text = "End Attack Phase"
+
+[connection signal="pressed" from="Fortify" to="." method="_on_fortify_pressed"]
+[connection signal="pressed" from="End Turn" to="." method="_on_end_turn_pressed"]
+[connection signal="pressed" from="Trade-In Cards" to="." method="_on_trade_in_cards_pressed"]
+[connection signal="pressed" from="Next Phase" to="." method="_on_next_phase_pressed"]
+[connection signal="pressed" from="Deploy Troops" to="." method="_on_deploy_troops_pressed"]
+[connection signal="pressed" from="Start Turn" to="." method="_on_start_turn_pressed"]
+[connection signal="pressed" from="AttackPanel/RollDiceButton" to="." method="_on_roll_dice_button_pressed"]
+[connection signal="pressed" from="AttackPanel/Attack" to="." method="_on_attack_pressed"]
+[connection signal="canceled" from="AttackPanel/ConfirmationDialog" to="." method="_on_end_attack_phase_pressed"]
+[connection signal="confirmed" from="AttackPanel/ConfirmationDialog" to="." method="_on_confirmation_dialog_confirmed"]

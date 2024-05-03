@@ -6,7 +6,7 @@ using Godot;
 
 namespace Practice.GD_Risk_Game_SW_CW;
 
-public class Player
+public partial class Player : Node    
 {
     public string Name { get; private set; }
     public List<Territory> Territories { get; private set; }
@@ -48,11 +48,6 @@ public class Player
         Name = name;
         Infantry = initialArmies; // Initialize all as infantry for simplicity
         Territories = new List<Territory>();
-    }
-
-    public Player()
-    {
-        throw new NotImplementedException();
     }
 
     private void UpdateTotalArmies()

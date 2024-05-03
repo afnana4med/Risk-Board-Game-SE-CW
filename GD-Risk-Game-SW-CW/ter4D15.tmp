@@ -1,6 +1,6 @@
-[gd_scene load_steps=44 format=3 uid="uid://c0tcys8qjih8a"]
+[gd_scene load_steps=45 format=3 uid="uid://c0tcys8qjih8a"]
 
-[ext_resource type="Script" path="res://TerritoryManager.gd" id="1_2iuky"]
+[ext_resource type="Script" path="res://GD-Risk-Game-SW-CW/Territory.cs" id="2_n38pi"]
 [ext_resource type="Texture2D" uid="uid://dmkbphtje1ucv" path="res://GD-Risk-Game-SW-CW/Continent img/Madagascar.png" id="2_yj72g"]
 [ext_resource type="Texture2D" uid="uid://li3wqfiuh61x" path="res://GD-Risk-Game-SW-CW/Continent img/Ural.png" id="3_uhhpb"]
 [ext_resource type="Texture2D" uid="uid://b5bdytp5aa2lb" path="res://GD-Risk-Game-SW-CW/Continent img/Afghanistan.png" id="4_pm5jv"]
@@ -17,8 +17,8 @@
 [ext_resource type="Texture2D" uid="uid://dg1fsxguw6jew" path="res://GD-Risk-Game-SW-CW/Continent img/NewGuinea.png" id="15_vr7kg"]
 [ext_resource type="Texture2D" uid="uid://dm8i6acjj5hpy" path="res://GD-Risk-Game-SW-CW/Continent img/EasternAustralia.png" id="16_gek26"]
 [ext_resource type="Texture2D" uid="uid://ce4xsn6nqkghu" path="res://GD-Risk-Game-SW-CW/Continent img/WesternAustralia.png" id="17_2t3ng"]
-[ext_resource type="Texture2D" uid="uid://csc2uwawarvd8" path="res://GD-Risk-Game-SW-CW/Continent img/Alaska.png" id="18_8dsiy"]
-[ext_resource type="Texture2D" uid="uid://b8bj2iakuxvg3" path="res://GD-Risk-Game-SW-CW/Continent img/NorthwestTerritory.png" id="19_u2lcl"]
+[ext_resource type="Texture2D" uid="uid://csc2uwawarvd8" path="res://GD-Risk-Game-SW-CW/Continent img/Alaska.png" id="18_boby5"]
+[ext_resource type="Texture2D" uid="uid://b8bj2iakuxvg3" path="res://GD-Risk-Game-SW-CW/Continent img/NorthwestTerritory.png" id="19_sn0e3"]
 [ext_resource type="Texture2D" uid="uid://bi6qx4e4sh0f7" path="res://GD-Risk-Game-SW-CW/Continent img/Alberta.png" id="20_0tim5"]
 [ext_resource type="Texture2D" uid="uid://cu4ou667m7tad" path="res://GD-Risk-Game-SW-CW/Continent img/Ontario.png" id="21_fl07c"]
 [ext_resource type="Texture2D" uid="uid://cbes2d52rgxst" path="res://GD-Risk-Game-SW-CW/Continent img/WesternUnitedStates.png" id="22_2et7c"]
@@ -43,18 +43,20 @@
 [ext_resource type="Texture2D" uid="uid://da3nsfp531xmn" path="res://GD-Risk-Game-SW-CW/Continent img/NorthAfrica.png" id="41_jjlju"]
 [ext_resource type="Texture2D" uid="uid://cl7bcna6cst82" path="res://GD-Risk-Game-SW-CW/Continent img/Congo.png" id="42_gys0f"]
 [ext_resource type="Texture2D" uid="uid://2ypo4gywe0bn" path="res://GD-Risk-Game-SW-CW/Continent img/SouthAfrica.png" id="43_dg7of"]
+[ext_resource type="PackedScene" uid="uid://cxmmgtqmxu62j" path="res://GD-Risk-Game-SW-CW/canvas_layer.tscn" id="44_vrhgy"]
 
 [node name="TerritoryManager" type="Node2D"]
 position = Vector2(488, 315)
 scale = Vector2(0.1, 0.1)
-script = ExtResource("1_2iuky")
+script = ExtResource("2_n38pi")
 
 [node name="Asia - Ural" type="TextureButton" parent="."]
-offset_left = 2260.0
-offset_top = -2875.0
-offset_right = 3339.0
-offset_bottom = -1600.0
+offset_left = 2270.0
+offset_top = -2880.0
+offset_right = 3349.0
+offset_bottom = -1605.0
 texture_normal = ExtResource("3_uhhpb")
+texture_pressed = ExtResource("3_uhhpb")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -64,6 +66,7 @@ offset_top = -2021.0
 offset_right = 3120.0
 offset_bottom = -972.0
 texture_normal = ExtResource("4_pm5jv")
+texture_pressed = ExtResource("4_pm5jv")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -83,6 +86,7 @@ offset_top = -3044.0
 offset_right = 3806.0
 offset_bottom = -1436.0
 texture_normal = ExtResource("5_kps6o")
+texture_pressed = ExtResource("5_kps6o")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -92,6 +96,7 @@ offset_top = -3034.0
 offset_right = 4554.0
 offset_bottom = -2233.0
 texture_normal = ExtResource("6_bjw1r")
+texture_pressed = ExtResource("6_bjw1r")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -101,6 +106,7 @@ offset_top = -2938.0
 offset_right = 5793.0
 offset_bottom = -1396.0
 texture_normal = ExtResource("7_6trfg")
+texture_pressed = ExtResource("7_6trfg")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -110,6 +116,7 @@ offset_top = -2372.0
 offset_right = 4569.0
 offset_bottom = -1605.0
 texture_normal = ExtResource("8_tqooo")
+texture_pressed = ExtResource("8_tqooo")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -119,6 +126,7 @@ offset_top = -1806.0
 offset_right = 4532.0
 offset_bottom = -326.0
 texture_normal = ExtResource("9_upqhh")
+texture_pressed = ExtResource("9_upqhh")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -128,6 +136,7 @@ offset_top = -1679.0
 offset_right = 4871.0
 offset_bottom = -1186.0
 texture_normal = ExtResource("10_kxgac")
+texture_pressed = ExtResource("10_kxgac")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -137,15 +146,17 @@ offset_top = -1592.0
 offset_right = 5577.0
 offset_bottom = -720.0
 texture_normal = ExtResource("11_1ecu7")
+texture_pressed = ExtResource("11_1ecu7")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
 [node name="Asia - Siam" type="TextureButton" parent="."]
-offset_left = 2531.0
-offset_top = -1423.0
-offset_right = 3296.0
-offset_bottom = -582.0
+offset_left = 3550.0
+offset_top = -630.0
+offset_right = 4315.0
+offset_bottom = 211.0
 texture_normal = ExtResource("12_tbdfa")
+texture_pressed = ExtResource("12_tbdfa")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -155,6 +166,7 @@ offset_top = -1143.0
 offset_right = 3786.0
 offset_bottom = 124.0
 texture_normal = ExtResource("13_kiypq")
+texture_pressed = ExtResource("13_kiypq")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -164,6 +176,7 @@ offset_top = 437.0
 offset_right = 4599.0
 offset_bottom = 1170.0
 texture_normal = ExtResource("14_d8myd")
+texture_pressed = ExtResource("14_d8myd")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -173,6 +186,7 @@ offset_top = 180.0
 offset_right = 5321.0
 offset_bottom = 726.0
 texture_normal = ExtResource("15_vr7kg")
+texture_pressed = ExtResource("15_vr7kg")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -182,6 +196,7 @@ offset_top = 938.0
 offset_right = 5588.0
 offset_bottom = 1852.0
 texture_normal = ExtResource("16_gek26")
+texture_pressed = ExtResource("16_gek26")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -191,26 +206,28 @@ offset_top = 971.0
 offset_right = 5202.0
 offset_bottom = 1844.0
 texture_normal = ExtResource("17_2t3ng")
+texture_pressed = ExtResource("17_2t3ng")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
 [node name="North America - Alaska" type="TextureButton" parent="."]
-offset_left = -4368.0
-offset_top = -2523.0
-offset_right = -3341.0
-offset_bottom = -1691.0
-texture_normal = ExtResource("18_8dsiy")
-texture_pressed = ExtResource("18_8dsiy")
+offset_left = -4320.0
+offset_top = -2510.0
+offset_right = -3293.0
+offset_bottom = -1678.0
+action_mode = 0
+texture_normal = ExtResource("18_boby5")
+texture_pressed = ExtResource("18_boby5")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
 [node name="North America - NorthWestTerritory" type="TextureButton" parent="."]
-offset_left = -3471.0
-offset_top = -2755.0
-offset_right = -2349.0
-offset_bottom = -2011.0
-texture_normal = ExtResource("19_u2lcl")
-texture_pressed = ExtResource("19_u2lcl")
+offset_left = -3430.0
+offset_top = -2740.0
+offset_right = -2308.0
+offset_bottom = -1996.0
+texture_normal = ExtResource("19_sn0e3")
+texture_pressed = ExtResource("19_sn0e3")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -220,6 +237,7 @@ offset_top = -2021.0
 offset_right = -2881.0
 offset_bottom = -1606.0
 texture_normal = ExtResource("20_0tim5")
+texture_pressed = ExtResource("20_0tim5")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -229,6 +247,7 @@ offset_top = -2032.0
 offset_right = -2461.0
 offset_bottom = -1413.0
 texture_normal = ExtResource("21_fl07c")
+texture_pressed = ExtResource("21_fl07c")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -238,6 +257,7 @@ offset_top = -1614.0
 offset_right = -2892.0
 offset_bottom = -1137.0
 texture_normal = ExtResource("22_2et7c")
+texture_pressed = ExtResource("22_2et7c")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -247,6 +267,7 @@ offset_top = -1591.0
 offset_right = -2353.0
 offset_bottom = -1104.0
 texture_normal = ExtResource("23_y1wdq")
+texture_pressed = ExtResource("23_y1wdq")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -256,6 +277,7 @@ offset_top = -2021.0
 offset_right = -1862.0
 offset_bottom = -1461.0
 texture_normal = ExtResource("24_1sp3c")
+texture_pressed = ExtResource("24_1sp3c")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -265,6 +287,7 @@ offset_top = -1263.0
 offset_right = -2659.0
 offset_bottom = -328.0
 texture_normal = ExtResource("25_24rdb")
+texture_pressed = ExtResource("25_24rdb")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -274,6 +297,7 @@ offset_top = -538.0
 offset_right = -2026.0
 offset_bottom = 276.0
 texture_normal = ExtResource("26_wpj27")
+texture_pressed = ExtResource("26_wpj27")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -283,6 +307,7 @@ offset_top = 95.0
 offset_right = -2358.0
 offset_bottom = 1048.0
 texture_normal = ExtResource("27_v7wqs")
+texture_pressed = ExtResource("27_v7wqs")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -292,6 +317,7 @@ offset_top = 808.0
 offset_right = -2280.0
 offset_bottom = 2127.0
 texture_normal = ExtResource("28_aw6rp")
+texture_pressed = ExtResource("28_aw6rp")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -314,6 +340,7 @@ offset_top = -2878.0
 offset_right = -646.0
 offset_bottom = -1901.0
 texture_normal = ExtResource("30_v6j4e")
+texture_pressed = ExtResource("30_v6j4e")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -323,6 +350,7 @@ offset_top = -2474.0
 offset_right = 332.0
 offset_bottom = -2020.0
 texture_normal = ExtResource("31_4q7iw")
+texture_pressed = ExtResource("31_4q7iw")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -332,6 +360,7 @@ offset_top = -1843.0
 offset_right = 320.0
 offset_bottom = -1205.0
 texture_normal = ExtResource("32_16o0e")
+texture_pressed = ExtResource("32_16o0e")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -341,6 +370,7 @@ offset_top = -2700.0
 offset_right = 1478.0
 offset_bottom = -2038.0
 texture_normal = ExtResource("33_lp0m7")
+texture_pressed = ExtResource("33_lp0m7")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -350,6 +380,7 @@ offset_top = -1799.0
 offset_right = 1184.0
 offset_bottom = -1167.0
 texture_normal = ExtResource("34_hsalo")
+texture_pressed = ExtResource("34_hsalo")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -359,6 +390,7 @@ offset_top = -1304.0
 offset_right = 722.0
 offset_bottom = -569.0
 texture_normal = ExtResource("35_4ayj5")
+texture_pressed = ExtResource("35_4ayj5")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -368,6 +400,7 @@ offset_top = -1282.0
 offset_right = 1180.0
 offset_bottom = -773.0
 texture_normal = ExtResource("36_7v5wk")
+texture_pressed = ExtResource("36_7v5wk")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -377,6 +410,7 @@ offset_top = -2716.0
 offset_right = 2504.0
 offset_bottom = -1215.0
 texture_normal = ExtResource("37_8d2ik")
+texture_pressed = ExtResource("37_8d2ik")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -386,6 +420,7 @@ offset_top = -1222.0
 offset_right = 2392.0
 offset_bottom = -67.0
 texture_normal = ExtResource("38_7eohh")
+texture_pressed = ExtResource("38_7eohh")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -395,6 +430,7 @@ offset_top = -592.0
 offset_right = 1575.0
 offset_bottom = 33.0
 texture_normal = ExtResource("39_skm0m")
+texture_pressed = ExtResource("39_skm0m")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -405,6 +441,7 @@ offset_right = 2234.0
 offset_bottom = 1261.0
 rotation = -0.132734
 texture_normal = ExtResource("40_pip6m")
+texture_pressed = ExtResource("40_pip6m")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -414,6 +451,7 @@ offset_top = -693.0
 offset_right = 1267.0
 offset_bottom = 626.0
 texture_normal = ExtResource("41_jjlju")
+texture_pressed = ExtResource("41_jjlju")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -423,6 +461,7 @@ offset_top = 272.0
 offset_right = 1691.0
 offset_bottom = 1153.0
 texture_normal = ExtResource("42_gys0f")
+texture_pressed = ExtResource("42_gys0f")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -434,48 +473,13 @@ offset_bottom = 2011.0
 toggle_mode = true
 button_pressed = true
 texture_normal = ExtResource("43_dg7of")
+texture_pressed = ExtResource("43_dg7of")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
-[connection signal="pressed" from="Asia - Ural" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Asia - Afghanistan" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Africa - Madagascar" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Asia - Siberia" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Asia - Yakutsk" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Asia - Kamchatka" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Asia - Irkutsk" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Asia - China" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Asia - Mongolia" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Asia - Japan" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Asia - Siam" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Asia - India" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Australia - Indonesia" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Australia - NewGuinea" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Australia - EasternAustralia" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Australia - WesternAustralia" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="North America - Alaska" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="North America - NorthWestTerritory" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="North America - Alberta" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="North America - Ontario" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="North America - WesternUnitedStates" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="North America - EasternUnitedStates" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="North America - Quebec" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="North America - CentralAmerica" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="South America - Venezulea" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="South America - Peru" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="South America - Argentina" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="South America - Brazil" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="North America - Greenland" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Europe - Iceland" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Europe - GreatBritian" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Europe - Scandinavia" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Europe - NorthernEurope" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Europe - WesternEurope" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Europe - SouthernEurope" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Europe - Ukraine" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Asia - MiddleEast" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Africa - Egypt" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Africa - EastAfrica" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Africa - NorthAfrica" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Africa - Congo" to="." method="handle_territory_selection"]
-[connection signal="pressed" from="Africa - SouthAfrica" to="." method="handle_territory_selection"]
+[node name="button_layer" parent="." instance=ExtResource("44_vrhgy")]
+layer = 1
+offset = Vector2(0, 150)
+transform = Transform2D(1, 0, 0, 1, 0, 150)
+
+[node name="Territory" type="Node2D" parent="."]

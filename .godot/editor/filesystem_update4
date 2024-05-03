@@ -1,10 +1,11 @@
-res://main.tscn
+res://GD-Risk-Game-SW-CW/main.tscn
 res://buttonLayer.gd
 res://GD-Risk-Game-SW-CW/continents.tscn
-res://canvas_layer.tscn
-res://territory_manager.tscn
+res://GD-Risk-Game-SW-CW/territory_manager.tscn
+res://GD-Risk-Game-SW-CW/canvas_layer.tscn
+res://players.tscn
+res://play.gd
 res://GD-Risk-Game-SW-CW/GameController.cs
 res://GD-Risk-Game-SW-CW/Territory.cs
-res://South America - Brazil.gd
-res://TerritoryManager.gd
-res://Africa - SouthAfrica.gd
+res://GD-Risk-Game-SW-CW/territory_manager.gd
+res://GD-Risk-Game-SW-CW/Player.cs

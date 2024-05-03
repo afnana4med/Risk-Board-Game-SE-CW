@@ -1,5 +1,6 @@
 
 using Godot;
+using System;
 
 namespace Practice.GD_Risk_Game_SW_CW;
 using System.Collections.Generic;
@@ -7,7 +8,10 @@ using System.Collections.Generic;
 // Territory.cs
 public partial class Territory : Node {
     public string TerritoryName { get; private set; }
+    
+    
     public Player Owner { get; set; }
+    
     public int Armies { get; set; }
 
     public Territory(string name) {
@@ -22,14 +26,14 @@ public partial class Territory : Node {
     }
 }
 
+
+
 // Graph.cs
-
-
 public class Graph
 {
     public Dictionary<string, Territory> Territories { get; private set; }
-    public Dictionary<Territory, List<Territory>> Adjacencies { get; private set; }
-
+    public Dictionary<Territory, List<Territory>> Adjacencies { get; private set; } 
+    
     public Graph()
     {
         Territories = new Dictionary<string, Territory>();

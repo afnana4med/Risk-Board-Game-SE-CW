@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://t6khpa7bm3uw"]
+[gd_scene load_steps=6 format=3 uid="uid://c2cpvwjvjwxsy"]
 
-[ext_resource type="Script" path="res://quit.gd" id="1_itr3y"]
 [ext_resource type="Script" path="res://play.gd" id="1_r4fs4"]
-[ext_resource type="Texture2D" path="res://risk game background.jpg" id="3_d60ov"]
+[ext_resource type="Texture2D" uid="uid://cdxi3sa6wr40m" path="res://risk game background.jpg" id="3_d60ov"]
 
 [sub_resource type="Theme" id="Theme_fel7v"]
 
@@ -99,10 +98,10 @@ scale = Vector2(1.12646, 1.287)
 texture = ExtResource("3_d60ov")
 
 [node name="play" type="Button" parent="background"]
-offset_left = -431.0
-offset_top = 58.0
-offset_right = -141.0
-offset_bottom = 200.0
+offset_left = -420.121
+offset_top = 65.0738
+offset_right = -130.121
+offset_bottom = 207.074
 theme = SubResource("Theme_fel7v")
 theme_override_colors/font_color = Color(0.690196, 0.490196, 0.34902, 1)
 theme_override_fonts/font = SubResource("FontFile_4dovs")
@@ -120,8 +119,6 @@ theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_fonts/font = SubResource("FontFile_k6u5p")
 theme_override_font_sizes/font_size = 100
 text = "QUIT"
-script = ExtResource("1_itr3y")
 
-[connection signal="pressed" from="background/play" to="background/play" method="_on_pressed"]
-[connection signal="pressed" from="background/play" to="background/quit" method="_on_play_pressed"]
-[connection signal="pressed" from="background/quit" to="background/quit" method="_on_pressed"]
+[connection signal="pressed" from="background/play" to="background/play" method="_on_play_pressed"]
+[connection signal="pressed" from="background/quit" to="background/play" method="_on_quit_pressed"]

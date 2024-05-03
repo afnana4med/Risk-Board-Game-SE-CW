@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://cmhr8303uex35"]
+[gd_scene load_steps=4 format=3 uid="uid://cmhr8303uex35"]
 
 [ext_resource type="Script" path="res://GD-Risk-Game-SW-CW/GameController.cs" id="1_djv1d"]
-[ext_resource type="PackedScene" uid="uid://cxmmgtqmxu62j" path="res://canvas_layer.tscn" id="2_h513h"]
-[ext_resource type="PackedScene" uid="uid://c0tcys8qjih8a" path="res://territory_manager.tscn" id="3_uoay1"]
+[ext_resource type="PackedScene" uid="uid://c0tcys8qjih8a" path="res://GD-Risk-Game-SW-CW/territory_manager.tscn" id="3_uoay1"]
 
 [sub_resource type="CSharpScript" id="CSharpScript_mhcug"]
 script/source = "
@@ -74,11 +73,7 @@ public class Graph
 position = Vector2(0, -380)
 script = ExtResource("1_djv1d")
 
-[node name="button_layer" parent="." instance=ExtResource("2_h513h")]
-offset = Vector2(0, 150)
-transform = Transform2D(1, 0, 0, 1, 0, 150)
-
 [node name="TerritoryManager" parent="." instance=ExtResource("3_uoay1")]
-position = Vector2(475, 698)
+position = Vector2(464, 720)
 script = SubResource("CSharpScript_mhcug")
 game_controller = null
