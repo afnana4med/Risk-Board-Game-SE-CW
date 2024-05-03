@@ -117,51 +117,6 @@ offset_right = 767.0
 offset_bottom = 481.0
 text = "Fortify"
 
-[node name="PopupPanel" type="PopupPanel" parent="Fortify"]
-initial_position = 1
-size = Vector2i(260, 115)
-min_size = Vector2i(35, 20)
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Fortify/PopupPanel"]
-offset_left = 4.0
-offset_top = 4.0
-offset_right = 256.0
-offset_bottom = 111.0
-
-[node name="source territory" type="OptionButton" parent="Fortify/PopupPanel/VBoxContainer"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="Fortify/PopupPanel/VBoxContainer/source territory"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-text = "              Source territory"
-
-[node name="destination territory" type="OptionButton" parent="Fortify/PopupPanel/VBoxContainer"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="Fortify/PopupPanel/VBoxContainer/destination territory"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-text = "          Destination territory"
-
-[node name="no of armies" type="SpinBox" parent="Fortify/PopupPanel/VBoxContainer"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="Fortify/PopupPanel/VBoxContainer/no of armies"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-text = "            Number of Armies"
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Fortify/PopupPanel"]
-offset_left = 4.0
-offset_top = 4.0
-offset_right = 256.0
-offset_bottom = 111.0
-alignment = 1
-
 [node name="End Turn" type="Button" parent="."]
 offset_left = 784.0
 offset_top = 434.0

@@ -672,7 +672,7 @@ public void ResolveAttack()
 
     if (SelectedAttackingTerritory != null && SelectedDefendingTerritory != null)
     {
-        GD.Print("Start Attacking");
+        GD.Print("\nStart Attacking");
         
         if (!IsValidAttack(SelectedAttackingTerritory, SelectedDefendingTerritory))
         {

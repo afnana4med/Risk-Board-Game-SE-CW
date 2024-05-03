@@ -29,7 +29,7 @@ func handle_territory_selection(territory_name):
 			game_controller.SelectDefendingTerritory(territory)
 			print("Selected as defending territory: ", territory)
 			# Optionally, proceed to resolve attack
-			game_controller.ResolveAttack()
+			#game_controller.ResolveAttack()
 			#game_controller.ResetTerritoryColors()  # If you are highlighting territories, reset them after the attack
 		else:
 			print("Invalid selection for defending territory. Must be adjacent to the attacking territory and belong to a different player.")
@@ -45,6 +45,7 @@ func handle_territory_selection(territory_name):
 var dragging = false
 var source_territory = null
 var destination_territory = null
+
 
 
 
@@ -80,7 +81,6 @@ func _on_Territory_gui_input(event, territory):
 
 
 
-func handle_army_movement(source, destination):
-	pass
-	#print("Move armies from %s to %s" % [source.name, destination.name])
-	# Implement army movement logic here
+
+
+

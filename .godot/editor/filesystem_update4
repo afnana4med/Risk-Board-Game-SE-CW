@@ -9,3 +9,4 @@ res://GD-Risk-Game-SW-CW/GameController.cs
 res://GD-Risk-Game-SW-CW/Territory.cs
 res://GD-Risk-Game-SW-CW/territory_manager.gd
 res://GD-Risk-Game-SW-CW/Player.cs
+res://GD-Risk-Game-SW-CW/MoveArmiesDialog.gd

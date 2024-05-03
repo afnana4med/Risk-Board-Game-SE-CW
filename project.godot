@@ -20,6 +20,8 @@ config/icon="res://icon.svg"
 game_controller="*res://GD-Risk-Game-SW-CW/GameController.cs"
 Player="*res://GD-Risk-Game-SW-CW/Player.cs"
 Territory="*res://GD-Risk-Game-SW-CW/Territory.cs"
+territory_manager="*res://GD-Risk-Game-SW-CW/territory_manager.gd"
+MoveArmiesDialog="*res://GD-Risk-Game-SW-CW/MoveArmiesDialog.gd"
 
 [dotnet]
 
